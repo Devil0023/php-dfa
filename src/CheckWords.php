@@ -78,7 +78,7 @@ class CheckWords extends Base
 
                 $word .= $nowWord;
 
-                if ($nowMap['end']) {
+                if (@$nowMap['end']) {
                     array_push($words, $word);
 
                     $word = '';

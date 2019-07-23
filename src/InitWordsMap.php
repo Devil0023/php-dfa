@@ -76,7 +76,7 @@ class InitWordsMap extends Base
                 'end' => 1,
             ];
         } else {
-            if ($map[$key]) {
+            if (@$map[$key]) {
                 $this->mergePathToMap($map[$key], $str, $length + 1);
             } else {
                 $map[$key] = $this->getStrPath($str, $length + 1);
