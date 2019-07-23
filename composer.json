@@ -1,0 +1,17 @@
+{
+    "name": "guda/php-dfa",
+    "type": "library",
+    "description": "Find keywords by using DFA.",
+    "authors": [
+        {
+            "name": "guda",
+            "email": "245092238@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "guda\\php-dfa\\": "src/"
+        }
+    }
+}
