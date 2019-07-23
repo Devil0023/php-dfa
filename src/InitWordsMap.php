@@ -52,12 +52,12 @@ class InitWordsMap extends Base
         $result = [];
         $key = mb_substr($str, $length, 1);
         if ($length === mb_strlen($str) - 1) {
-            $result[$key] = [
+            @$result[$key] = [
                 'end' => 1
             ];
             return $result;
         } else {
-            $result[$key] = $this->getStrPath($str, $length + 1);
+            @$result[$key] = $this->getStrPath($str, $length + 1);
             return $result;
         }
     }
@@ -72,14 +72,14 @@ class InitWordsMap extends Base
     {
         $key = mb_substr($str, $length, 1);
         if ($length === mb_strlen($str) - 1) {
-            $map[$key] = [
+            @$map[$key] = [
                 'end' => 1,
             ];
         } else {
             if (@$map[$key]) {
                 $this->mergePathToMap($map[$key], $str, $length + 1);
             } else {
-                $map[$key] = $this->getStrPath($str, $length + 1);
+                @$map[$key] = $this->getStrPath($str, $length + 1);
             }
         }
     }

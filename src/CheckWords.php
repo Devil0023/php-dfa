@@ -72,7 +72,7 @@ class CheckWords extends Base
                 continue;
             }
 
-            $nowMap = $nowMap[$nowWord];
+            $nowMap = @$nowMap[$nowWord];
 
             if ($nowMap) {
 
