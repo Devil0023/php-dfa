@@ -5,7 +5,7 @@
 
 ## 安装
 ```
-composer require lustre/php-dfa-sensitive
+composer require guda/php-dfa
 ```
 
 ## 使用
