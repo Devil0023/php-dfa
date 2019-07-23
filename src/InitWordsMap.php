@@ -1,6 +1,6 @@
 <?php
 
-namespace guda\src;
+namespace guda\phpdfa;
 
 class InitWordsMap extends Base
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace guda\src;
+namespace guda\phpdfa;
 
 class CheckWords extends Base
 {
